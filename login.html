@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: black;
+        }
+        .container{
+            background-color: black;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .box{
+            background-color: #1a1a1a;
+            display: flex;
+            padding: 20px 80px;
+            border-radius: 30px;
+            /* text-align: center; */
+             justify-content: center;
+            flex-direction: column; 
+            gap: 30px;
+        }
+        label{
+            color: #fff;
+        }
+        #userName{
+            height:30px;
+            border-radius: 15px;
+            border: transparent;
+        }
+        #password{
+            height:30px;
+            border-radius: 15px;
+            border: transparent;
+        }
+        input[id="userName"]:hover{
+            background-color: #fff;
+        }
+        input[id="password"]:hover{
+            background-color: #fff;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        button{
+            background-color: blue;
+            height: 35px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #fff;
+        }
+        input{
+            background-color: #333;
+            text-align: center;
+            /* padding: 10px 50px; */
+        }
+        input:hover{
+            background-color: rgb(2, 6, 6);
+            
+        }
+        h2{
+            color: beige;
+            text-align: center;
+        }
+        .account{
+            display: flex;
+            column-gap: 120px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Login</h2>
+    <label for="userName">UserName</label>
+    <input type="text" placeholder="User_name"id="userName">
+    <label for="password">Password</label>
+    <input type="password" placeholder="password"id="password">
+    <a href="">forget password?</a>
+    <button>Login</button>
+    <div class="account">
+        <a href="#" id="text">Don't have an account? </a>
+        <a href="#">Signup</a>
+    </div>
+    
+        </div>
+    </div>
+</body>
+</html>
